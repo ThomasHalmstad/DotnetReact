@@ -13,7 +13,7 @@ export const NavigationBar = () => {
 
     return (
         <div className="navigationBarWrapper">
-            <img className="logotype" src={Logotype} alt={"Error..."} onClick={() => history.push(RoutingPath.HomeView)} />
+            <img className="logotype" src={Logotype} alt={'Error...'} onClick={() => history.push(RoutingPath.HomeView)} />
 
             <span className="signin" onClick={() => history.push(RoutingPath.SignInView)}>Log in</span>
 

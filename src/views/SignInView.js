@@ -3,7 +3,7 @@ import { UserContext } from '../shared/provider/UserProvider'
 
 export const SignInView = () => {
     const [username, setUsername] = useState()
-    const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
+    const [, setAuthenticatedUser] = useContext(UserContext)
 
     const login = (e) => {
         e.preventDefault()
@@ -12,8 +12,6 @@ export const SignInView = () => {
 
     return (
         <div>
-            <h1>{authenticatedUser}</h1>
-
             <form>
                 <span>Username:</span>
                 <input onChange={(event) => setUsername(event.target.value)} /> <br />
