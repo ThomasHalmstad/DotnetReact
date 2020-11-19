@@ -11,7 +11,8 @@
 }
 
 .headerTitle {
-    grid-column: 5/7;   
+    grid-column: 5/7;
+    text-align: center;   
 }
 
 .signin {

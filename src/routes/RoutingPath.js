@@ -1,6 +1,6 @@
 const HomeView = '/home'
 const SignInView = '/signin'
-const SettingsView = '/settings'
+const SettingsView = '/profile'
 
 export default {
     HomeView,

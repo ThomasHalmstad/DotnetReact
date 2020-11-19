@@ -7,7 +7,13 @@ import './Profile.css'
 export const Profile = () => {
 
     const history = useHistory()
-    const [authenticatedUser,] = useContext(UserContext)
+    const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
+
+    const logout = () => {
+        setAuthenticatedUser()
+        history.push(RoutingPath.HomeView)
+    }
+
     return (
         <div className="signin">
             <img className="profileImg" src={'https://thispersondoesnotexist.com/image '} alt={'Error'} style={{ width: 35 }} />
@@ -15,7 +21,8 @@ export const Profile = () => {
 
             <div className="profileDropdown">
                 <span onClick={() => history.push(RoutingPath.SettingsView)}>Profile</span>
-                <span>Logout</span>
+
+                <span onClick={() => logout()}>Logout</span>
             </div>
         </div>
     )

@@ -14,7 +14,6 @@ export const NavigationBar = () => {
     const displayUserIfAuthenticated = () => {
         if (authenticatedUser) {
             return <Profile />
-
         }
         else {
             return <span className="signin" onClick={() => history.push(RoutingPath.SignInView)}>Log in</span>
