@@ -1,0 +1,13 @@
+.profileDropdown {
+    position: absolute;
+    background-color: yellow;
+    min-width: 220px;
+    padding: 10px;
+    margin-top: 1.5%;
+    z-index: 10;
+}
+
+.profileDropdown span {
+    display: block;
+    padding: 2%;
+}

@@ -1,4 +1,6 @@
 .navigationBarWrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
     background-color: darkgrey;
     padding: 1%;
 }
@@ -8,6 +10,13 @@
     cursor: pointer;
 }
 
+.headerTitle {
+    grid-column: 5/7;   
+}
+
 .signin {
     cursor: pointer;
+    grid-column: 10/11;
+    justify-self: centeR;
+    align-self: center;
 }
