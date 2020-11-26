@@ -11,7 +11,7 @@ import BrowserCache from '../shared/utils/BrowserCache'
 export const Routes = (props) => {
     const [authenticatedUser, setAuthenticatedUser] = useContext(UserContext)
 
-    //if/else-sats
+    //if-else-sats
     const blockRouteIfNotAuthenticated = (navigateToView) => {
         return authenticatedUser ? navigateToView : SignInView
     }

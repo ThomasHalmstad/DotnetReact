@@ -18,7 +18,7 @@ export const Profile = () => {
 
     return (
         <div className="signin">
-            <img className="profileImg" src={'https://thispersondoesnotexist.com/image '} alt={'Error'} style={{ width: 35 }} />
+            <img className="profileImg" src={'https://thispersondoesnotexist.com/image '} alt={'Error'} style={{ width: 35 }} /> <br />
             <span>{authenticatedUser}</span>
 
             <div className="profileDropdown">
