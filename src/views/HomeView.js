@@ -33,8 +33,14 @@ export const HomeView = () => {
     }
 
     useEffect(() => {
+        console.log('Rendering Component')
+
         if (debouncedSearchTerm) {
             fetchDataFromPokemonAPI()
+        }
+
+        return () => {
+            console.log('Changing searchterm')
         }
     }, [debouncedSearchTerm])
 
