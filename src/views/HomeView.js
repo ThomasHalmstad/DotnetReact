@@ -25,10 +25,10 @@ export const HomeView = () => {
             <hr />
             <br />
             <img src={data?.sprites?.front_default} alt={''} />
-            <h1> name: {data?.name} </h1>
-            <h1> weight: {data?.weight} lb</h1>
-            <h1> height: {data?.height} lb</h1>
-            <h1> abilities: {data?.moves?.length} total moves</h1>
+            <h1> Name: {data?.name} </h1>
+            <h1> Weight: {data?.weight} lb</h1>
+            <h1> Height: {data?.height} </h1>
+            <h1> Abilities: {data?.moves?.length} total moves</h1>
         </div>
     }
 
@@ -40,6 +40,7 @@ export const HomeView = () => {
 
     return (
         <div>
+            <h2>Search for a pokemon</h2>
             <input onChange={(event) => setSearch(event.target.value)} />
             {loading
                 ? null
